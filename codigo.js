@@ -68,14 +68,32 @@
 //     document.write(i+"<br>");
 // }
 // -------------- BUCLE FOR IN  y OF-------------------------------------------------------------------------------------
-let animales = ["gato","perro","pajaro", "raton"];
-animales.tamanio = "grande";//concateno 
+// let animales = ["gato","perro","pajaro", "raton"];
+// animales.tamanio = "grande";//concateno 
 
-for (animal in animales) {//agarra la posicion 
-    document.write(animal+"<br>");
-}
-document.write("-------<br>");
-for (animal of animales) {//agarra el elmento 
-    document.write(animal+"<br>");
-}
+// for (animal in animales) {//agarra la posicion 
+//     document.write(animal+"<br>");
+// }
+// document.write("-------<br>");
+// for (animal of animales) {//agarra el elmento 
+//     document.write(animal+"<br>");
+// }
+// -------------- SENTECIA LABEL------------------------------------------------
 
+// array1 = ["maria","josefa","roberta"];
+// array2 = ["pedro","marcelo",array1,"josefina"];
+
+// forLabel://Esta es la sentencia label y le puedo dar cualquier nombre
+// for (let array in array2) {//agarra la posicion 
+//     if (array == 2) {
+//         for (let array of array1) {//agarra el elmento 
+//             // continue;
+//             // continue forLabel;//salta el array de la posicion 2 
+//             document.write(array+"<br>");
+//             // break;
+//             break forLabel;//termina el primer for cuando el array es igual a 2
+//         }
+//     }else{
+//         document.write(array2[array]+"<br>");
+//     }
+// }
