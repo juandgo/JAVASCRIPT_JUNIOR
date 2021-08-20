@@ -78,7 +78,7 @@
 // for (animal of animales) {//agarra el elmento 
 //     document.write(animal+"<br>");
 // }
-// -------------- SENTECIA LABEL------------------------------------------------
+// -------------- SENTECIA LABEL Y SENTECIA CONTINUE ------------------------------------------------
 
 // array1 = ["maria","josefa","roberta"];
 // array2 = ["pedro","marcelo",array1,"josefina"];
@@ -97,3 +97,66 @@
 //         document.write(array2[array]+"<br>");
 //     }
 // }
+// --------------- FUNCIONES -------------------------------------------------------
+
+// - Definiciones y usos
+// - Formas de crear funciones (y llamarlas)
+// - Returns 
+// - Parametros
+// - Scope
+// - Funciones flecha
+
+// --------------- FUNCION FLECHA -------------------------------------------------------
+
+// la  palabra funcion cambia por una flecha "=>" y una variable agarra el valor que retorna la funcion tabien mer perimte colocar la variable sin perntesis, tambien permite resumir codigo.
+
+//ej1
+// const saludar = (nombre)=>{
+//     let frase = `¡Hola ${nombre}! ¿Como estas?`;
+//     document.write(frase)
+// }
+//ej2
+// const saludar = nombre=>{ let frase = `¡Hola ${nombre}! ¿Como estas?`; document.write(frase)}
+
+// saludar("pedro")
+// ------------------ Ejercicios ----------------------------------------------------------------------------
+// Ej 1
+// let free = false;
+
+// const validarCliente = (time)=>{
+//     let edad = prompt("¿Cúal es tu edad");
+//     if (edad >= 18){
+//         if(time >= 2 && time < 7 && free == false){
+//             alert("puedes pasar gratis porque eres la primer persona despues de las 2 AM")
+//             free = true;
+//         }else{
+//             alert(`Son las ${time}:00Hs y puedes pasar, pero tienes que pagar la entrada`);
+//         }
+//     }else{
+//         alert("Mira papu, eres menor de edad por ende no vas a pasar, pensa")
+//     }
+// }
+
+// validarCliente(12)
+// validarCliente(4)
+// validarCliente(1)
+// validarCliente(7)
+
+// Ej 2
+
+let cantidad = prompt("¿cuantos alumnos son?")
+let alumnosTotales = [];
+
+for (let i = 0; i < cantidad; i++) {
+    alumnosTotales[i] = [prompt("Nombre del alumno"+(i+1)),0];
+}
+
+const tomaAsistencia = (nombre, p)=>{ 
+    let presencia = prompt(nombre)
+    if (presencia == "p" || presencia == "P") {
+        alumnosTotales[i][1]++;//
+    }
+}
+
+
+
