@@ -158,5 +158,20 @@ const tomaAsistencia = (nombre, p)=>{
     }
 }
 
+for (let i = 0; i < 30; i++) {
+    for (alumno in alumnosTotales) {
+        tomaAsistencia(alumnosTotales[alumno][0].alumno);
+    }    
+}
 
+for(alumno in alumnosTotales) {
+     let resultado = `${alumnosTotales[alumno][0]}:<br>
+     ___________Presentes: ${alumnosTotales[alumno][1]}:<br>
+     ___________Asistencias: ${30 - alumnosTotales[alumno][1]}:<br>`;
+     if (30 - alumnosTotales[alumno][1] > 18) {
+         resultado += "<b style='color:red'>REPROBADO POR INACISTENCIAS</b><br><br>";
+     }else{
+         resultado += "<br><br>";
+     }
+}
 
