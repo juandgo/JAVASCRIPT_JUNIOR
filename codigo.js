@@ -148,26 +148,28 @@ let cantidad = prompt("¿cuantos alumnos son?")
 let alumnosTotales = [];
 
 for (let i = 0; i < cantidad; i++) {
-    alumnosTotales[i] = [prompt("Nombre del alumno"+(i+1)),0];
+    alumnosTotales[i] = [prompt("Nombre del alumno"+(i+1)),0];//Cero es la cantidad de asistencias por lo cual esto es una matriz dentro de una matriz 
+    // EJ: {lucas, 0}, {pedro, 1},{Laura, 0}
 }
 
-const tomaAsistencia = (nombre, p)=>{ 
-    let presencia = prompt(nombre)
+const tomarAsistencia = (nombre, p)=>{ 
+    // if (presencia.ignoreCase == "p") {
+    let presencia = prompt(nombre);
     if (presencia == "p" || presencia == "P") {
-        alumnosTotales[i][1]++;//
+        alumnosTotales[p][1]++;//esto indica que siempre va agarra la posicion i y la numero 1 que tiene el array interno
     }
 }
 
 for (let i = 0; i < 30; i++) {
     for (alumno in alumnosTotales) {
-        tomaAsistencia(alumnosTotales[alumno][0].alumno);
+        tomarAsistencia(alumnosTotales[alumno][0],alumno);
     }    
 }
 
 for(alumno in alumnosTotales) {
      let resultado = `${alumnosTotales[alumno][0]}:<br>
-     ___________Presentes: ${alumnosTotales[alumno][1]}:<br>
-     ___________Asistencias: ${30 - alumnosTotales[alumno][1]}:<br>`;
+     ________Presentes: ${alumnosTotales[alumno][1]}:<br>
+     ________Ausencias: ${30 - alumnosTotales[alumno][1]}`;
      if (30 - alumnosTotales[alumno][1] > 18) {
          resultado += "<b style='color:red'>REPROBADO POR INACISTENCIAS</b><br><br>";
      }else{
