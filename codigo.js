@@ -171,9 +171,10 @@ for(alumno in alumnosTotales) {
      ________Presentes: ${alumnosTotales[alumno][1]}:<br>
      ________Ausencias: ${30 - alumnosTotales[alumno][1]}`;
      if (30 - alumnosTotales[alumno][1] > 18) {
-         resultado += "<b style='color:red'>REPROBADO POR INACISTENCIAS</b><br><br>";
+         resultado += "<b style='color:red'>  REPROBADO POR INACISTENCIAS</b><br><br>";
      }else{
          resultado += "<br><br>";
      }
+     document.write(resultado)
 }
 
