@@ -168,10 +168,10 @@ for (let i = 0; i < 30; i++) {
 
 for(alumno in alumnosTotales) {
      let resultado = `${alumnosTotales[alumno][0]}:<br>
-     ________Presentes: ${alumnosTotales[alumno][1]}:<br>
-     ________Ausencias: ${30 - alumnosTotales[alumno][1]}`;
+     ________Presentes: ${alumnosTotales[alumno][1]}<br>
+     ________Ausencias: ${30 - alumnosTotales[alumno][1]}<br>`;
      if (30 - alumnosTotales[alumno][1] > 18) {
-         resultado += "<b style='color:red'>  REPROBADO POR INACISTENCIAS</b><br><br>";
+         resultado += "<b style='color:red'>&nbsp;REPROBADO&ensp;POR&emsp;INACISTENCIAS</b><br><br>";//&emsp;&ensp;&emsp; Sirven para dar espacio
      }else{
          resultado += "<br><br>";
      }
