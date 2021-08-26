@@ -4,7 +4,7 @@ class Celular{
         this.peso = peso;
         this.tamanio = tamanio;
         this.resolucionDeCamara = rdc;
-        this.ram = ram;
+        this.memoriaRam = ram;
         this.encendido = false;
     }
 
@@ -39,8 +39,9 @@ class Celular{
         return `Color: <b>${this.color}</b></br>
                 Peso: <b>${this.peso}</b></br>
                 Tamaño: <b>${this.tamanio}</b></br>
+                Memoria Ram: <b>${this.memoriaRam}</b></br>
                 Reslución de Video: <b>${this.resolucionDeCamara}</b></br>
-                Memoria Ram: <b>${this.ram}</b></br>`;
+                `;
     }
 }
 
@@ -75,8 +76,8 @@ celular2 = new CelularAltaGama("negro","142g","6","4k","4GB","hd");
 
 
 document.write(`
-    ${celular1.mobileInfo()} <br>
-    ${celular2.mobileInfo()} <br>
+    ${celular1.infoAltaGama()} <br>
+    ${celular2.infoAltaGama()} <br>
     `);
 
 
