@@ -7,20 +7,6 @@ class App{
         this.instalada = false;
     }
 
-    abrir(){
-        if(this.iniciada == false && this.instalada == true){
-            this.iniciada = true;
-            alert("app iniciada");
-        }
-    }
-
-    cerrar(){
-        if(this.iniciada == true && this.instalada == true){
-            this.iniciada = false;
-            alert("app cerrada");
-        }
-    }
-
     instalar(){
         if(this.instalada == false){
             this.instalada = true;
@@ -34,11 +20,25 @@ class App{
             alert("app desinstalada correctamente");
         }
     }
+    
+    abrir(){
+        if(this.iniciada == false && this.instalada == true){
+            this.iniciada = true;
+            alert("app iniciada");
+        }
+    }
 
-    app = new App("16.000","5 estrellas","900mb");
-
-    app.instalar();
-    app.cerrar();
-    app.iniciar();
-
+    cerrar(){
+        if(this.iniciada == true && this.instalada == true){
+            this.iniciada = false;
+            alert("app cerrada");  
+        }
+    }
 }
+
+app = new App("16.000","5 estrellas","900mb");
+
+app.instalar()
+app.abrir();
+app.cerrar();
+app.desinstalar();
