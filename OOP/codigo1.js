@@ -57,7 +57,7 @@ class CelularAltaGama extends Celular {
         alert("Vamos a iniciar un reconocimiento facials");
     }
     infoAltaGama(){
-        return this.mobileInfo+`Resolucion de camara extra: ${this.resolucionDeCamaraExtra}`;
+        return this.mobileInfo()+`Resolucion de camara extra: ${this.resolucionDeCamaraExtra}<br>`;
     }
 }
 
