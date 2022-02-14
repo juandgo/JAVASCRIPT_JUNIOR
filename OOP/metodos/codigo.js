@@ -1,4 +1,4 @@
-// ========== CONCAT ======================
+// ========== CONCAT ============================================
 
 // let cadena = "cadena de prueba";
 // let cadena2 = " real";
@@ -24,7 +24,7 @@
 // document.write("<br>",resultado2);
 // document.write("<br>",resultado3);
 
-//============ INDEXOFF, LASTINDEXOFF  ===========================
+//============ INDEXOFF, LASTINDEXOF  ===========================
 // Me da la posicion de la cadena en que inicia la palabra 
 //lastIndexOf busca la palabra en la ultima posicion de la cadena
 
@@ -37,12 +37,15 @@
 // document.write(resultado);
 // document.write(resultado2);
 
-//============  PADSTART  =======================================
+//============  PADSTART, PADEND Y REPEAT =================================
 //Agrega texto segun la cantidad de caracteres indicada.
+// REPEAT solo repite 
 
 // let cadena = "ABC";
 // let cadena2 = "";
 
-// let resultado = cadena.padStart(40,"1234");
+// let resultado = cadena.padStart(15,"1234");
 
 // document.write(resultado);
+
+//============  =================================
