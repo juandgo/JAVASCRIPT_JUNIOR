@@ -61,14 +61,19 @@
 
 // document.write(resultado.length);
 
-//============  ARRAYS =================================
+//============  METODOS TRANSFORMADORES =================================
 // POP sirve para agarrar y sacar el ultimo elemento del array
 // SHIFT sirve para agarrar y sacar el primer elemento del array
+// PUSH sirve para agregar uno o mas de un elemento al final del array
+// REVERSE INVIERTE LOS ELEMENTOS DEL ARRAY
 let nombres = ["pedro","maria","jorge"];
 
 document.write("Array original: <b>",nombres+" </b><br>");
 // let resultado = nombres.pop();
-let resultado = nombres.shift();
+// let resultado = nombres.shift();
+// let resultado = nombres.push("camilo","david");
+// let resultado = nombres.reverse();
 
-document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
+// document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
+document.write(resultado,"<br>");
 document.write("Resultado: <b>"+nombres+"</b>");
