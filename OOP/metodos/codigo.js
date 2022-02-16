@@ -48,7 +48,7 @@
 
 // document.write(resultado);
 
-//============  TRIM, TRIMEND  =================================
+//============  TRIM, TRIMEND, TRIMSTART  =================================
 //Borra los espacios que hay en un string
 //Borra los espacios que hay al final de un string
 //Borra los espacios que hay al comienzo de un string
@@ -60,3 +60,15 @@
 // let resultado = cadena.trimStart();
 
 // document.write(resultado.length);
+
+//============  ARRAYS =================================
+// POP sirve para agarrar y sacar el ultimo elemento del array
+// SHIFT sirve para agarrar y sacar el primer elemento del array
+let nombres = ["pedro","maria","jorge"];
+
+document.write("Array original: <b>",nombres+" </b><br>");
+// let resultado = nombres.pop();
+let resultado = nombres.shift();
+
+document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
+document.write("Resultado: <b>"+nombres+"</b>");
