@@ -48,4 +48,15 @@
 
 // document.write(resultado);
 
-//============  =================================
+//============  TRIM, TRIMEND  =================================
+//Borra los espacios que hay en un string
+//Borra los espacios que hay al final de un string
+//Borra los espacios que hay al comienzo de un string
+
+// let cadena = "  pedro   ";
+
+// let resultado = cadena.trim();
+// let resultado = cadena.trimEnd();
+// let resultado = cadena.trimStart();
+
+// document.write(resultado.length);
