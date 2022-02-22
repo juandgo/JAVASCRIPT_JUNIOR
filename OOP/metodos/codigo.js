@@ -66,6 +66,8 @@
 // SHIFT sirve para agarrar y sacar el primer elemento del array
 // PUSH sirve para agregar uno o mas de un elemento al final del array
 // REVERSE INVIERTE LOS ELEMENTOS DEL ARRAY
+// UNSHIFT sirve para agregar uno o mas de un elemento al inicio del array
+
 let nombres = ["pedro","maria","jorge"];
 
 document.write("Array original: <b>",nombres+" </b><br>");
@@ -73,6 +75,7 @@ document.write("Array original: <b>",nombres+" </b><br>");
 // let resultado = nombres.shift();
 // let resultado = nombres.push("camilo","david");
 // let resultado = nombres.reverse();
+let resultado = nombres.unshift(0,1,2);
 
 // document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
 document.write(resultado,"<br>");
