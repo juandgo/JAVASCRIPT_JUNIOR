@@ -70,7 +70,7 @@
 
 let nombres = ["pedro","maria","jorge"];
 
-document.write("Array original: <b>",nombres+" </b><br>");
+document.write("Array original: <b>"+nombres+" </b><br>");
 // let resultado = nombres.pop();
 // let resultado = nombres.shift();
 // let resultado = nombres.push("camilo","david");
@@ -80,3 +80,4 @@ let resultado = nombres.unshift(0,1,2);
 // document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
 document.write(resultado,"<br>");
 document.write("Resultado: <b>"+nombres+"</b>");
+// console.log("Resultado: <b>"+nombres+"</b>"); para ejecutar por terminal solo puedo usar console.log
