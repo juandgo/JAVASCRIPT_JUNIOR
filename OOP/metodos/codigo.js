@@ -68,22 +68,24 @@
 // REVERSE INVIERTE LOS ELEMENTOS DEL ARRAY
 // UNSHIFT sirve para agregar uno o mas de un elemento al inicio del array
 // SORT sirve para organizar loa elementos del array en orden alfabetico o numerico
-// SPLICE borra los elemento segun el rango indicado de la cadena y los replaza por otro u tros elementos, si no los quiero borrar simplemente coloco 0 y solo añade los elementos a la cadena.
+// SPLICE borra los elemento segun el rango indicado de la cadena y los replaza por otro u tros elementos, si no los quiero borrar simplemente coloco 0 y solo añade los elementos a la cadena, con -1,1 me refiero al final de un arreglo.
 
-// let nombres = ["pedro","maria","jorge"];
-// let numeros = [1,4,2,5,4,9,8]
-let numeros = ["manzanas","pera","uba","mango","sandia","borojo","guayaba","piña"]
+// // let nombres = ["pedro","maria","jorge"];
+// // let numeros = [1,4,2,5,4,9,8]
+// let numeros = ["manzanas","pera","uba","mango","sandia","borojo","guayaba","piña"]
 
-document.write("Array original: <b>"+numeros+" </b><br>");
-// let resultado = nombres.pop();
-// let resultado = nombres.shift();
-// let resultado = nombres.push("camilo","david");
-// let resultado = nombres.reverse();
-// let resultado = nombres.unshift(0,1,2);
-// numeros.sort();
-numeros.splice(1,0,"Roberto","Camilo");
+// document.write("Array original: <b>"+numeros+" </b><br>");
+// // let resultado = nombres.pop();
+// // let resultado = nombres.shift();
+// // let resultado = nombres.push("camilo","david");
+// // let resultado = nombres.reverse();
+// // let resultado = nombres.unshift(0,1,2);
+// // numeros.sort();
+// numeros.splice(-1,1,"Roberto","Camilo");
 
-// document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
-// document.write(resultado,"<br>");
-document.write("Resultado: <b>"+numeros+"</b>");
-// console.log("Resultado: <b>"+nombres+"</b>"); para ejecutar por terminal solo puedo usar console.log
+// // document.write("Elemento removido: <b style='color:red'>",resultado,"</b><br>");
+// // document.write(resultado,"<br>");
+// document.write("Resultado: <b>"+numeros+"</b>");
+// // console.log("Resultado: <b>"+nombres+"</b>"); para ejecutar por terminal solo puedo usar console.log
+//============  METODOS ACCESORES =================================
+
