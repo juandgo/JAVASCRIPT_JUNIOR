@@ -25,7 +25,7 @@
 // document.write("<br>",resultado3);
 
 //============ INDEXOFF, LASTINDEXOF  ===========================
-// Me da la posicion de la cadena en que inicia la palabra 
+// INDEXOFF Me da la posicion de la cadena en que inicia la palabra 
 //lastIndexOf busca la palabra en la ultima posicion de la cadena
 
 // let cadena = "cadena de prueba";
@@ -49,9 +49,9 @@
 // document.write(resultado);
 
 //============  TRIM, TRIMEND, TRIMSTART  =================================
-//Borra los espacios que hay en un string
-//Borra los espacios que hay al final de un string
-//Borra los espacios que hay al comienzo de un string
+//TRIM Borra los espacios que hay en un string
+//TRIMEND Borra los espacios que hay al final de un string
+//TRIMSTART Borra los espacios que hay al comienzo de un string
 
 // let cadena = "  pedro   ";
 
@@ -88,4 +88,15 @@
 // document.write("Resultado: <b>"+numeros+"</b>");
 // // console.log("Resultado: <b>"+nombres+"</b>"); para ejecutar por terminal solo puedo usar console.log
 //============  METODOS ACCESORES =================================
+//JOINT convierte el arreglo a una cadena de texto, tambien podiendo añadir algun caracter a la cadena
+//SLICE es como el substring pero con elementos.
+let elementos = ["manzanas","pera","uba","mango","sandia","piña"]
+
+document.write(elementos+"<br><br>");
+
+// let resultado = elementos.join("<br>El elemento:________ ");
+let resultado = elementos.slice(0,-2);
+
+document.write(resultado);
+
 
