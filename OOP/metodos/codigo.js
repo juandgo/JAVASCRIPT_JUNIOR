@@ -90,13 +90,26 @@
 //============  METODOS ACCESORES =================================
 //JOINT convierte el arreglo a una cadena de texto, tambien podiendo añadir algun caracter a la cadena
 //SLICE es como el substring pero con elementos.
-let elementos = ["manzanas","pera","uba","mango","sandia","piña"]
+// let elementos = ["manzanas","pera","uba","mango","sandia","piña"]
 
-document.write(elementos+"<br><br>");
+// document.write(elementos+"<br><br>");
 
-// let resultado = elementos.join("<br>El elemento:________ ");
-let resultado = elementos.slice(0,-2);
+// // let resultado = elementos.join("<br>El elemento:________ ");
+// let resultado = elementos.slice(0,-2);
 
-document.write(resultado);
+// document.write(resultado);
+//============  MATH  ======================================================
+
+// numero = Math.sqrt(16);//raiz cuadrada
+// numero = Math.cbrt(16);//raiz cubica
+// numero = Math.max(123,2,678,98,34)//El numero mayor
+// numero = Math.min(123,2,678,98,34)//el numero minimo
+// for (let i = 0; i < 100000; i++) {
+//     let numero = Math.random()*99//numero aleatorio
+//     // numero = Math.round(4.3)//redondea segun al numero que se aproxime
+//     numero = Math.floor(numero+1)//redondea hacia abajo
+    
+//     document.write(numero+"<br>");
+// }
 
 
