@@ -15,7 +15,7 @@ class Calculadora{
     }
     potenciar(num,exp){
         let numero = num;
-        for (let i = 0; i < exp; i++) {
+        for (let i = 1; i < exp; i++) {
             numero *= num;            
         }
         return numero;
@@ -24,7 +24,7 @@ class Calculadora{
 
 const calculadora =  new Calculadora();
 alert("¿Que operacion deseas realizar?")
-let operacion = prompt("1: suma, 2: resta, 3: divicion, 4: multiplicacion, 5: potenciar")
+let operacion = prompt("1: suma, 2: resta, 3: multiplicacion, 4: divicion, 5: potenciar, 6: raiz cuadrada, 7: raiz cubica")
 
 if (operacion == 1) {
     let numero1 = prompt("primer numero para sumar");
@@ -37,19 +37,28 @@ if (operacion == 1) {
     resultado = calculadora.restar(numero1, numero2);
     alert(`Tu resultado es: ${resultado}`)
 } else if(operacion == 3){
-    let numero1 = prompt("primer numero para restar");
-    let numero2 = prompt("segundo numero para restar");
+    let numero1 = prompt("primer numero para multiplicar");
+    let numero2 = prompt("segundo numero para multiplicar");
     resultado = calculadora.multiplicar(numero1, numero2);
     alert(`Tu resultado es: ${resultado}`)
 } else if(operacion == 4){
-    let numero1 = prompt("primer numero para restar");
-    let numero2 = prompt("segundo numero para restar");
+    let numero1 = prompt("primer numero para dividir");
+    let numero2 = prompt("segundo numero para dividir");
     resultado = calculadora.dividir(numero1, numero2);
     alert(`Tu resultado es: ${resultado}`)
 } else if(operacion == 5){
-    let numero1 = prompt("primer numero para restar");
-    let numero2 = prompt("segundo numero para restar");
-    resultado = calculadora.dividir(numero1, numero2);
+    let numero = prompt("Numero a potenciar");
+    let exp = prompt("Exponente");
+    // resultado = calculadora.potenciar(numero,exp);
+    resultado = Math.pow(numero,exp);
+    alert(`Tu resultado es: ${resultado}`)
+} else if(operacion == 6){
+    let numero = prompt("Numero a sacar raiz");
+    resultado = Math.sqrt(numero);
+    alert(`Tu resultado es: ${resultado}`)
+} else if(operacion == 7){
+    let numero = prompt("Numero a sacar raiz cubica");
+    resultado = Math.cbrt(numero);
     alert(`Tu resultado es: ${resultado}`)
 } else {
     alert(`No se ha encontrado la opcion`);
