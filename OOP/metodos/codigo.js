@@ -114,6 +114,5 @@
 // let numero = Math.fround(9.75555555555555555555555)//solo aproxima los ultimos numeros
 // let numero = Math.trunc(9.3)//no redondea solo quita la parte decimal
 // document.write(numero+"<br>");
-//========================  PROPIEDADES  =======================================
-
+//============  Ejercicio de cofla 4 ============================================
 
