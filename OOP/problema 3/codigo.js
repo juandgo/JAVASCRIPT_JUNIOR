@@ -32,8 +32,10 @@ class App{
         if(this.iniciada == true && this.instalada == true){
             this.iniciada = false;
             alert("app cerrada");  
+            //lkajsdfhlkajs
         }
     }
+    //esto es un trabajo echo con tutoriales de youtube
 
     appInfo(){
         return `

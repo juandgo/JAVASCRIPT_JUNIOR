@@ -26,6 +26,9 @@ const calculadora =  new Calculadora();
 alert("¿Que operacion deseas realizar?")
 let operacion = prompt("1: suma, 2: resta, 3: multiplicacion, 4: divicion, 5: potenciar, 6: raiz cuadrada, 7: raiz cubica")
 
+// var numero1 = prompt("primer numero para operar");
+// var numero2 = prompt("segundo numero para operar");
+
 if (operacion == 1) {
     let numero1 = prompt("primer numero para sumar");
     let numero2 = prompt("segundo numero para sumar");
