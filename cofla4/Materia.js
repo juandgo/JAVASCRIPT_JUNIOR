@@ -27,13 +27,15 @@ const mostrarInformacion = (materia)=>{
 const cantidadClases = (alumno) => {
     let informacion = obtenerInformacion();
     let cantidadTotal = 0;
+    let clasesPresentes = [];
     for(info in informacion){
         // document.write(info)
         if (informacion[info].includes(alumno)) {
             cantidadTotal++;
+            clasesPresentes.push(info+" ");
         }
     }
-    return `<b style='color:blue'> ${alumno}</b> esta en: <b>${cantidadTotal} clases</b></br>`;
+    return `<b style='color:blue'> ${alumno}</b> esta en: <b>     ${cantidadTotal}</b>clases: <b style="color:green">${clasesPresentes}</b><br><br>`;
 }
 
 mostrarInformacion("fisica")
