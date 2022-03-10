@@ -8,15 +8,13 @@ let materias = {
 
 const inscribir = (alumno,materia) => {
     personas = materias[materia];
-    personas.shift();
-    alumnos = personas;
-    if (alumno.length >= 20) {
-        document.write(`lo siento <b>${alumno}</b>, las clases <b>${materia}</b> ya estan llenas`)
+    if (personas.length >= 21) {
+        document.write(`lo siento <b>${alumno}</b>, las clases <b>${materia}</b> ya estan llenas<br><br>`)
     }else{
-        alumnos.push(alumno)
+        personas.push(alumno)
         if (materia == "fisica") {
             materias = {
-                fisica: alumnos,
+                fisica: personas,
                 programacion: materias["programacion"],
                 logica: materias["logica"],
                 quimica: materias["quimica"]
@@ -24,7 +22,7 @@ const inscribir = (alumno,materia) => {
         }else if (materia == "programacion") {
             materias = {
                 fisica: materias["fisica"],
-                programacion: alumnos,
+                programacion: personas,
                 logica: materias["logica"],
                 quimica: materias["quimica"]
             }
@@ -32,7 +30,7 @@ const inscribir = (alumno,materia) => {
             materias = {
                 fisica: materias["fisica"],
                 programacion: materias["programacion"],
-                logica: alumnos,
+                logica: personas,
                 quimica: materias["quimica"]
             }
         }else if (materia == "quimica") {
@@ -40,14 +38,32 @@ const inscribir = (alumno,materia) => {
                 fisica: materias["fisica"],
                 programacion: materias["programacion"],
                 logica: materias["logica"],
-                quimica: alumnos
+                quimica: personas
             }
         }   
         document.write(`¡Felicidades ${alumno}! te has inscrito a ${materia} correctamente.`)     
     }
 }
 document.write(materias[`fisica`]+"<br>")
-
+//Solo podra registrar 21 alumnos, mejor dicho personas 
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
+inscribir("pedrito","fisica")
 inscribir("pedrito","fisica")
 
 document.write("<br>"+materias[`fisica`])
