@@ -4,7 +4,7 @@ const obtenerInformacion = (materia) => {
         fisica: ["Roldan","pedro","camilo","ramiro","armando"],
         programacion: ["Dalto","maria","juancho","diana","armando"],
         logica: ["Claudia","felipe","natahlia","fernando","cofla","julian"],
-        quimica: ["Andres","julian","camilo","diana","maria","cofla"],
+        quimica: ["Andres","julian","camilo","diana","maria","cofla"]
     }
     if (materias[materia] !== undefined) {
         // return materias[materia]
