@@ -8,9 +8,9 @@ console.log("Tareas")
 
 for(var i = 0; i < 14; i++){
     if(i == 0){
-        console.log("semana 1");
+        console.groupCollapsed("semana 1");
     }
-    console.group("dia "+(i+1));
+    console.groupCollapsed("dia "+(i+1));
     console.log(trabajo);
     console.log(descanso);
     console.log(estudio);
@@ -18,9 +18,10 @@ for(var i = 0; i < 14; i++){
     console.log(homework);
     console.groupEnd();
     if(i == 7){
-        if(i == 0){
-            console.groupEnd();
-            console.log("semana 1");
-        }
+        console.groupEnd();
+        console.groupCollapsed("semana 2");
     }
 }
+
+console.groupEnd();
+console.groupEnd();
