@@ -12,13 +12,29 @@ const materias = {
 
 const asistencia = ()=>{
     for(materia in materias){
-        let asistencias = materias[materias][0];
+        let asistencias = materias[materia][0];
+        let promedio = materias[materia][1];
+        let trabajos = materias[materia][2];
+        
+        console.log(materias[materia][3]);
+
         if(asistencias >= 90){
-            console.log(materias[materia][3])
-            console.log("%cAprobado","color:green")
+            console.log("%c Asistencias en orden","color:green")
         }else{
             console.log(materias[materia][3])
-            console.log("%cDesaprobado","color:red")
+            console.log("%c Falta de asistencias","color:red")
+        }
+
+        if(promedio >= 7){
+            console.log("%c Promedio aprobado","color:green")
+        }else{
+            console.log("%c Promedio desaprobado","color:green")
+        }
+
+        if(trabajos >= 3){
+            console.log("%c trabajos practicos en orden","color:green")
+        }else{
+            console.log("%c faltan trabajos practicos","color:green")
         }
     }
 }
